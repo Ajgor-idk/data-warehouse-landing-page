@@ -1,3 +1,82 @@
-@import url(/reset.css);
-@import url(/variables.css);
+@import url(/styles/reset.css);
+@import url(/styles/variables.css);
 @import url(/Fonts/avenir_ff/stylesheet.css);
+
+header,
+main,
+footer {
+  display: flex;
+  margin: auto auto;
+  width: 920px;
+}
+
+main,
+footer {
+  flex-direction: column;
+}
+
+header {
+  align-self: center;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px 50px;
+  width: 1100px;
+  margin: 50px auto;
+}
+
+.logo {
+  position: relative;
+  width: 50px;
+  height: 45px;
+}
+
+.logo-purple-dot {
+  background-color: var(--purple);
+  position: absolute;
+  width: 40%;
+  height: 50%;
+  bottom: 0;
+  border-radius: 50%;
+}
+
+.logo-pink-pointer {
+  background-color: var(--pink);
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  right: 0;
+  border-radius: 225%/100%;
+}
+
+nav, .request-demo {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    width: 30%;
+    justify-content: space-between;
+    
+}
+
+nav > a {
+    text-decoration: none;
+    font-size: var(--text-size-s);
+    font-weight: var(--light-weight-text);
+    color: var(--gray);    
+}
+
+nav > a:first-child {
+    font-weight: var(--very-heavy-weight-text);
+    text-decoration: none;
+    color: var(--dark-blue);
+}
+
+.request-demo {
+    text-decoration: none;
+    color: var(--dark-blue);
+    font-weight: var(--very-heavy-weight-text);
+    border-radius: 50%/111%;
+    box-shadow: 0 5px 5px rgba(75, 93, 104, 0.1);
+    padding: 2%;
+}
