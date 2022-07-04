@@ -134,3 +134,33 @@ nav > a:first-child {
   border-radius: 110%/270%;
   padding: 3%;
 }
+
+.more-about-us {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--light-pink);
+  border-radius: 4.5%/10%;
+}
+
+.about-us-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.about-us-text > h1 {
+  width: 75%;
+  text-align: center;
+  font-weight: var(--heavy-weight-text);
+  font-size: var(--text-size-xl);
+}
+
+.about-us-text > p {
+  width: 75%;
+  color: var(--gray);
+  font-weight: var(--light-weight-text);
+  font-size: var(--text-size-m);
+  line-height: 160%;
+}
