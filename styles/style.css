@@ -7,7 +7,7 @@ main,
 footer {
   display: flex;
   margin: auto auto;
-  width: 920px;
+  width: 1111px;
 }
 
 main,
@@ -15,11 +15,22 @@ footer {
   flex-direction: column;
 }
 
+body {
+  font-family: var(--text-font);
+}
+
+h1 {
+  font-family: var(--heading-font);
+}
+
+section {
+  margin: 100px 0;
+}
+
 header {
   align-self: center;
   display: flex;
-  justify-content: space-evenly;
-  gap: 20px 50px;
+  justify-content: space-between;
   width: 1100px;
   margin: 50px auto;
 }
@@ -56,7 +67,6 @@ nav, .request-demo {
 nav {
     width: 30%;
     justify-content: space-between;
-    
 }
 
 nav > a {
@@ -79,4 +89,48 @@ nav > a:first-child {
     border-radius: 50%/111%;
     box-shadow: 0 5px 5px rgba(75, 93, 104, 0.1);
     padding: 2%;
+    margin-left: 25%;
+}
+
+.entry-info {
+  display: flex;
+  width: 100%;
+}
+
+.entry-info-organize {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.entry-info-organize > h1 {
+  font-weight: var(--heavy-weight-text);
+  font-size: var(--text-size-xxl);
+  width: 645px;
+}
+
+.entry-info-organize > p {
+  font-weight: var(--light-weight-text);
+  font-size: var(--text-size-m);
+  width: 380px;
+  height: 120px;
+  color: var(--gray);
+}
+
+.entry-info > img {
+  position: relative;
+  right: 280px;
+  top: 120px;
+}
+
+.entry-info-organize > a {
+  width: 20%;
+  color: white;
+  background-color: var(--purple);
+  text-decoration: none;
+  text-align: center;
+  font-weight: var(--very-heavy-weight-text);
+  font-size: var(--text-size-m);
+  border-radius: 110%/270%;
+  padding: 3%;
 }
