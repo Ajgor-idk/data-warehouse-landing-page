@@ -19,6 +19,10 @@
       crossorigin
     />
     <link rel="stylesheet" href="/styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/9709e18ca2.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Modern website</title>
   </head>
   <body>
@@ -33,18 +37,20 @@
         <a href=""> Features </a>
         <a href=""> Signup </a>
       </nav>
-      <a href="" class="request-demo">Request Demo</a>
+      <a href="" class="request-demo"
+        >Request Demo <i class="fa-solid fa-arrow-right"></i
+      ></a>
     </header>
     <main>
       <section class="entry-info">
         <div class="entry-info-organize">
-        <h1>Save your data storage here.</h1>
-        <p>
-          Data Warehouse is a data storage area that has been tested for
-          security, so you can store your data here safely, but not be afraid of
-          being stolen by others.
-        </p>
-        <a href="">Learn more</a>
+          <h1>Save your data storage here.</h1>
+          <p>
+            Data Warehouse is a data storage area that has been tested for
+            security, so you can store your data here safely, but not be afraid
+            of being stolen by others.
+          </p>
+          <a href="">Learn more </a>
         </div>
         <img
           src="/images/image1.svg"
@@ -78,7 +84,6 @@
           </p>
         </div>
         <div class="features-offer">
-          <!-- Oddzielić warstę na backgorund -->
           <div class="offer-arrangement">
             <div class="offer-background first-offer"></div>
             <img
@@ -94,7 +99,7 @@
               </p>
               <a href="">
                 <span>Learn more</span>
-                <i>arrow</i>
+                <i class="fa-solid fa-arrow-right"></i>
               </a>
             </div>
           </div>
@@ -113,7 +118,7 @@
               </p>
               <a href="">
                 <span>Learn more</span>
-                <i>arrow</i>
+                <i class="fa-solid fa-arrow-right"></i>
               </a>
             </div>
           </div>
@@ -131,7 +136,7 @@
               </p>
               <a href="">
                 <span>Learn more</span>
-                <i>arrow</i>
+                <i class="fa-solid fa-arrow-right"></i>
               </a>
             </div>
           </div>
@@ -150,92 +155,141 @@
               </p>
               <a href="">
                 <span>Learn more</span>
-                <i>arrow</i>
+                <i class="fa-solid fa-arrow-right"></i>
               </a>
             </div>
           </div>
         </div>
       </section>
-      <section class="testimonials-area">
-        <div class="testimonials-background">
+      <section class="testimonials-background">
+        <div class="testimonials-area">
           <h1>Testimonials</h1>
           <div class="testimonials">
-            <img src="/images/profile1.jpg" alt="Profile picture." />
-            <div class="testimonial-main">
-              <!-- Potental JS here -->
-              <p>Name</p>
-              <p>position</p>
-              <p>
-                Suspendisse ultrices at diam lectus nullam. Nisl, sagittis
-                viverra enim erat tortor ultricies massa turpis. Arcu pulvinar
-                aenean nam laoreet nulla.
-              </p>
+            <div class="testimonial testimonial-first">
+              <img src="/images/profile1.jpg" alt="Profile picture." />
+              <div class="testimonial-main">
+                <p class="user-name">John Fang</p>
+                <p class="user-position">wordfaang.com</p>
+                <p class="user-info">
+                  Suspendisse ultrices at diam lectus nullam. Nisl, sagittis
+                  viverra enim erat tortor ultricies massa turpis. Arcu pulvinar
+                  aenean nam laoreet nulla.
+                </p>
+              </div>
             </div>
+            <div class="testimonial testimonial-back">
+              <img src="/images/profile2.jpg" alt="Profile picture." />
+              <div class="testimonial-main">
+                <p class="user-name">Jeny Doe</p>
+                <p class="user-position">UX Engineer</p>
+                <p class="user-info">
+                  Suspendisse ultrices at diam lectus nullam. Nisl, sagittis
+                  viverra enim erat tortor ultricies massa turpis. Arcu pulvinar
+                  aenean nam laoreet nulla.
+                </p>
+              </div>
+            </div>
+            <div class="testimonial testimonial-back">
+              <img src="/images/profile3.jpg" alt="Profile picture." />
+              <div class="testimonial-main">
+                <p class="user-name">William</p>
+                <p class="user-position">Web Designer</p>
+                <p class="user-info">
+                  Suspendisse ultrices at diam lectus nullam. Nisl, sagittis
+                  viverra enim erat tortor ultricies massa turpis. Arcu pulvinar
+                  aenean nam laoreet nulla.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>dots</div>
+            <!-- Don't know if it's a div and what I'll need. JS will be here too -->
             <div>
-              <div>dots</div>
-              <!-- Don't know if it's a div and what I'll need. JS will be here too -->
-              <div>arrows</div>
-              <!-- Don't know if it's a div and what I'll need. JS will be here too -->
+              <button><i class="fa-solid fa-arrow-left"></i></button>
+              <button><i class="fa-solid fa-arrow-right"></i></button>
             </div>
+            <!-- Don't know if it's a div and what I'll need. JS will be here too -->
           </div>
         </div>
       </section>
     </main>
     <footer>
-      <section class="forwarding">
-        <div class="forwading-text">
-          <h1>Try for free!</h1>
-          <p>Get limited 1 week free try our features!</p>
-        </div>
-        <div>
-          <a href="">Learn more</a>
+      <div class="footer-content">
+        <section class="forwarding">
+          <div class="forwarding-text">
+            <h1>Try for free!</h1>
+            <p>Get limited 1 week free try our features!</p>
+          </div>
+          <div class="forwarding-buttons">
+            <a href="" class="learn-more-btn">Learn more</a>
+            <a href="" class="request-demo">
+              Request Demo <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </section>
+        <section class="general-info">
+          <div class="bussines-info">
+            <div class="bussines-info-heading">
+              <div class="logo">
+                <div class="logo-purple-dot"></div>
+                <div class="logo-pink-pointer"></div>
+              </div>
+              <h1>DataWarehouse</h1>
+            </div>
+            <address>
+              Warehouse Society, 234 <br />
+              Bahagia Ave Street PRBW 29281
+            </address>
+            <p>
+              info@warehouse.project <br />
+              1-232-3434 (Main)
+            </p>
+          </div>
+          <div class="about">
+            <p>About</p>
+            <div class="about-forwards">
+              <a href="">Profile</a>
+              <a href="">Features</a>
+              <a href="">Careers</a>
+              <a href="">DW News</a>
+            </div>
+          </div>
+          <div class="help">
+            <p>Help</p>
+            <div class="help-forwards">
+              <a href="">Support</a>
+              <a href="">Sign up</a>
+              <a href="">Guide</a>
+              <a href="">Reports</a>
+              <a href="">Q&A</a>
+            </div>
+          </div>
+          <div class="social-media">
+            <p>Social Media</p>
+            <div class="icons">
+              <a href="https://www.facebook.com" target="_blank"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="https://twitter.com" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </section>
+        <section class="legal-info">
+          <p>
+            © Datawarehouse™, 2020. All rights reserved. Company <br />
+            Registration Number: 21479524.
+          </p>
           <a href="">
-            <p class="request-demo">Request Demo</p>
-            <i>arrow</i>
+            <i class="fa-solid fa-comment-dots"></i>
           </a>
-        </div>
-      </section>
-      <section class="general-info">
-        <h1>DataWarehouse</h1>
-        <div class="bussines-info">
-          <div class="logo">
-            <div class="logo-purple-dot"></div>
-            <div class="logo-pink-pointer"></div>
-          </div>
-          <p>Warehouse Society, 234 Bahagia Ave Street PRBW 29281</p>
-          <p>info@warehouse.project 1-232-3434 (Main)</p>
-        </div>
-        <div class="about">
-          <p>About</p>
-          <a href="">Profile</a>
-          <a href="">Features</a>
-          <a href="">Careers</a>
-          <a href="">DW News</a>
-        </div>
-        <div class="help">
-          <p>Help</p>
-          <a href="">Support</a>
-          <a href="">Sign up</a>
-          <a href="">Guide</a>
-          <a href="">Reports</a>
-          <a href="">Q&A</a>
-        </div>
-        <div class="social-media">
-          <p>Social Media</p>
-          <div class="icons">
-            <a href="https://www.facebook.com" target="_blank"><i>FB</i></a>
-            <a href="https://twitter.com" target="_blank"><i>TWT</i></a>
-            <a href="https://www.instagram.com" target="_blank"><i>IG</i></a>
-          </div>
-        </div>
-      </section>
-      <section class="legal-info">
-        <p>
-          © Datawarehouse™, 2020. All rights reserved. Company Registration
-          Number: 21479524.
-        </p>
-        <i>Chat icon</i>
-      </section>
+        </section>
+      </div>
     </footer>
   </body>
 </html>
