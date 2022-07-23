@@ -18,11 +18,20 @@
       type="font/woff2"
       crossorigin
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="/styles/style.css" />
     <script
       src="https://kit.fontawesome.com/9709e18ca2.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="js/index.js" defer></script>
     <title>Modern website</title>
   </head>
   <body>
@@ -164,52 +173,77 @@
       <section class="testimonials-background">
         <div class="testimonials-area">
           <h1>Testimonials</h1>
-          <div class="testimonials">
-            <div class="testimonial testimonial-first">
-              <img src="/images/profile1.jpg" alt="Profile picture." />
-              <div class="testimonial-main">
-                <p class="user-name">John Fang</p>
-                <p class="user-position">wordfaang.com</p>
-                <p class="user-info">
-                  Suspendisse ultrices at diam lectus nullam. Nisl, sagittis
-                  viverra enim erat tortor ultricies massa turpis. Arcu pulvinar
-                  aenean nam laoreet nulla.
-                </p>
+          <div class="testimonials swiper">
+            <div class="swiper-wrapper">
+              <div class="testimonial testimonial-first swiper-slide">
+                <div class="slide">
+                  <div class="slide-content">
+                  <img src="/images/profile1.jpg" alt="Profile picture." />
+                  <div class="testimonial-main">
+                    <p class="user-name">John Fang</p>
+                    <p class="user-position">wordfaang.com</p>
+                    <p class="user-info">
+                      Suspendisse ultrices at diam lectus nullam. Nisl, sagittis
+                      viverra enim erat tortor ultricies massa turpis. Arcu
+                      pulvinar aenean nam laoreet nulla.
+                    </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="testimonial testimonial-back">
-              <img src="/images/profile2.jpg" alt="Profile picture." />
-              <div class="testimonial-main">
-                <p class="user-name">Jeny Doe</p>
-                <p class="user-position">UX Engineer</p>
-                <p class="user-info">
-                  Suspendisse ultrices at diam lectus nullam. Nisl, sagittis
-                  viverra enim erat tortor ultricies massa turpis. Arcu pulvinar
-                  aenean nam laoreet nulla.
-                </p>
+              <div class="testimonial testimonial-back swiper-slide">
+                <div class="slide">
+                  <div class="slide-content">
+                  <img src="/images/profile2.jpg" alt="Profile picture." />
+                  <div class="testimonial-main">
+                    <p class="user-name">Jeny Doe</p>
+                    <p class="user-position">UX Engineer</p>
+                    <p class="user-info">
+                      Suspendisse ultrices at diam lectus nullam. Nisl, sagittis
+                      viverra enim erat tortor ultricies massa turpis. Arcu
+                      pulvinar aenean nam laoreet nulla.
+                    </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="testimonial testimonial-back">
-              <img src="/images/profile3.jpg" alt="Profile picture." />
-              <div class="testimonial-main">
-                <p class="user-name">William</p>
-                <p class="user-position">Web Designer</p>
-                <p class="user-info">
-                  Suspendisse ultrices at diam lectus nullam. Nisl, sagittis
-                  viverra enim erat tortor ultricies massa turpis. Arcu pulvinar
-                  aenean nam laoreet nulla.
-                </p>
+              <div class="testimonial testimonial-back swiper-slide">
+                <div class="slide">
+                  <div class="slide-content">
+                  <img src="/images/profile3.jpg" alt="Profile picture." />
+                  <div class="testimonial-main">
+                    <p class="user-name">William</p>
+                    <p class="user-position">Web Designer</p>
+                    <p class="user-info">
+                      Suspendisse ultrices at diam lectus nullam. Nisl, sagittis
+                      viverra enim erat tortor ultricies massa turpis. Arcu
+                      pulvinar aenean nam laoreet nulla.
+                    </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div>
-            <div>dots</div>
-            <!-- Don't know if it's a div and what I'll need. JS will be here too -->
-            <div>
-              <button><i class="fa-solid fa-arrow-left"></i></button>
-              <button><i class="fa-solid fa-arrow-right"></i></button>
+          <div class="testimonial-control">
+            <div class="swiper-pagination"></div>
+            <div class="arrows">
+            <div class="swiper-button-prev">
+              <i class="fa-solid fa-arrow-left"></i>
             </div>
-            <!-- Don't know if it's a div and what I'll need. JS will be here too -->
+            <div class="swiper-button-next">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            </div>
+            </div>
+            <!-- <div>
+              <button class="arrow-left">
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <button class="arrow-right">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div> -->
           </div>
         </div>
       </section>

@@ -16,6 +16,7 @@ main,
 }
 
 body {
+  background-color: #e5e5e5;
   font-family: var(--text-font);
 }
 
@@ -86,6 +87,7 @@ nav > a:first-child {
 
 .request-demo {
   text-decoration: none;
+  background-color: white;
   color: var(--dark-blue);
   font-weight: var(--very-heavy-weight-text);
   border-radius: 50%/111%;
@@ -305,22 +307,31 @@ nav > a:first-child {
   line-height: 130%;
 }
 
-.testimonials {
-  display: flex;
-  height: 45%;
+.swiper {
+  height: 50%;
+  width: 85%;
+  margin-left: 100px;
 }
 
-.testimonial {
+.slide {
   display: flex;
-  margin: 0 2%;
+  height: 90%;
+  width: 90%;
   background-color: white;
   align-items: center;
   border-radius: 20px;
   box-shadow: 0 20px 0 rgba(95, 65, 137, 0.3);
 }
 
-.testimonial > img {
-  margin: 0 2%;
+.slide-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 0 70px;
+}
+
+.slide-content > img {
+  height: 90px;
   border-radius: 50%;
 }
 
@@ -352,12 +363,52 @@ nav > a:first-child {
   overflow: hidden;
 }
 
-.testimonial-first {
-  width: 60%;
+.testimonial-control {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 50px 30px 100px;
 }
 
-.testimonial-back {
-  width: 20%;
+.swiper-pagination {
+  position: relative;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  width: auto;
+  bottom: 0;
+}
+
+.swiper-pagination-bullet {
+  background-color: white;
+  width: 5px;
+  height: 5px;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--pink);
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: relative;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+.arrows {
+  display: flex;
+  gap: 25px;
+}
+
+.swiper-button-prev > .fa-arrow-left,
+.swiper-button-next > .fa-arrow-right {
+  color: white;
 }
 
 footer {
@@ -428,8 +479,17 @@ footer {
   flex-direction: column;
 }
 
+.about > p,
+.help > p,
+.social-media > p {
+  font-weight: var(--fat-weight-text);
+  font-size: var(--text-size-s);
+  line-height: var(--line-height);
+}
+
 .bussines-info {
   justify-content: space-evenly;
+  color: var(--dark-blue);
 }
 
 .bussines-info-heading {
@@ -439,7 +499,6 @@ footer {
 }
 
 .bussines-info-heading > h1 {
-  color: var(--dark-blue);
   font-weight: var(--fat-weight-text);
   font-size: 20px;
   line-height: var(--line-height);
@@ -448,7 +507,6 @@ footer {
 
 .bussines-info > address,
 .bussines-info > p {
-  color: var(--dark-blue);
   font-weight: var(--light-weight-text);
   font-size: var(--text-size-s);
   letter-spacing: 0.01em;
@@ -457,12 +515,12 @@ footer {
 
 .bussines-info > address {
   margin: 60px 0 10px 0;
-  font-weight: var(--light-weight-text);
 }
 
 .about,
 .help,
 .social-media {
+  color: var(--dark-blue);
   gap: 25%;
 }
 
