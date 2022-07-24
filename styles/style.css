@@ -2,6 +2,11 @@
 @import url(/styles/variables.css);
 @import url(/Fonts/avenir_ff/stylesheet.css);
 
+*::selection {
+  background-color: var(--purple);
+  color: white;
+}
+
 header,
 main,
 .footer-content {
