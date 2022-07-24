@@ -72,17 +72,24 @@ nav {
   margin-right: 25%;
 }
 
-nav > a {
+.header-link {
+  position: relative;
   text-decoration: none;
   font-size: var(--text-size-s);
   font-weight: var(--light-weight-text);
   color: var(--gray);
 }
 
-nav > a:first-child {
+.header-link:first-child {
   font-weight: var(--very-heavy-weight-text);
   text-decoration: none;
   color: var(--dark-blue);
+}
+
+.header-link:hover {
+  color: var(--dark-blue);
+  font-weight: var(--medium-weight-text);
+  bottom: 4%;
 }
 
 .request-demo {
@@ -94,6 +101,11 @@ nav > a:first-child {
   box-shadow: 0 5px 5px rgba(75, 93, 104, 0.1);
   padding: 2%;
   gap: 15px;
+  transition: box-shadow linear 0.3s;
+}
+
+.request-demo:hover {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .fa-arrow-right,
@@ -133,7 +145,7 @@ nav > a:first-child {
   top: 120px;
 }
 
-.entry-info-organize > a {
+.learn-more-purple {
   width: 20%;
   color: white;
   background-color: var(--purple);
@@ -143,6 +155,13 @@ nav > a:first-child {
   font-size: var(--text-size-m);
   border-radius: 110%/270%;
   padding: 3%;
+  transition: background-color linear 0.3s, color linear 0.3s;
+}
+
+.learn-more-purple:hover {
+  background-color: white;
+  color: var(--purple);
+  border: 1px var(--purple) solid;
 }
 
 .more-about-us {
@@ -233,13 +252,19 @@ nav > a:first-child {
   color: var(--gray);
 }
 
-.offer-text > a {
+.offer-forwarding {
   display: flex;
+  position: relative;
   text-decoration: none;
   gap: 15px;
+  transition: transform 5s linear;
 }
 
-.offer-text > a > span {
+.offer-forwarding:hover > .fa-arrow-right {
+  transform: translateX(10px);
+}
+
+.offer-forwarding > span {
   color: black;
   font-weight: var(--very-heavy-weight-text);
   font-size: var(--text-size-s);
@@ -462,6 +487,13 @@ footer {
   border-radius: 30%/80%;
   padding: 3px;
   margin-right: 50px;
+  transition: background-color linear 0.3s, color linear 0.3s;
+}
+
+.learn-more-btn:hover {
+  background-color: white;
+  color: var(--pink);
+  border: 1px var(--pink) solid;
 }
 
 .general-info {
@@ -524,13 +556,16 @@ footer {
   gap: 25%;
 }
 
-.about-forwards > a,
-.help-forwards > a {
+.forward-link {
   color: var(--dark-blue);
   text-decoration: none;
   font-weight: var(--very-light-text);
   font-size: var(--text-size-s);
   line-height: 250%;
+}
+
+.forward-link:hover {
+  color: var(--purple);
 }
 
 .icons {
@@ -539,7 +574,7 @@ footer {
   gap: 10px;
 }
 
-.icons > a {
+.SM-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -550,6 +585,13 @@ footer {
   background-color: #21235310;
   padding: 5px;
   border-radius: 50%;
+  transition: all linear 0.3s;
+}
+
+.SM-link:hover {
+  background-color: var(--purple);
+  width: 35px;
+  height: 35px;
 }
 
 .legal-info {
